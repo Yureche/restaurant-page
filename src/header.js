@@ -1,4 +1,6 @@
-export default function showHeader() {
+import { showMenu } from "./menu";
+
+export function showHeader() {
   const HEADER = document.createElement("header");
   document.body.appendChild(HEADER);
 
@@ -21,4 +23,7 @@ export default function showHeader() {
   ABOUT.textContent = "About";
   ABOUT.classList.add("navbar_item");
   NAVBAR.append(MENU, ORDER, ABOUT);
+  MENU.addEventListener("click", () => {
+    showMenu();
+  });
 }
