@@ -1,6 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #f0e9d2;
 }
 
 header {
@@ -15,6 +22,7 @@ header {
 .logo {
   font-size: 60px;
   margin: 5px 0 15px;
+  color: #678983;
 }
 
 .navbar {
@@ -26,14 +34,15 @@ header {
 .navbar_item {
   margin: 7px;
   transition: 0.3s;
+  color: #678983;
 }
 
 .navbar_item::after {
   content: "";
-  width: 0px;
+  width: 0;
   height: 2px;
   display: block;
-  background: black;
+  background: #678983;
   transition: 300ms;
 }
 
