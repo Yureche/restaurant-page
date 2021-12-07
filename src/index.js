@@ -1,5 +1,11 @@
-import { showMenu } from "./menu.js";
-import { showHeader } from "./header.js";
+import "./header.js";
+import "./menu.js";
 import "./style.css";
 
-showHeader();
+// const MENU_NAVBAR = document.querySelector(".menu_navbar");
+const MENU_NAVBAR = document.querySelector(".navbar_menu");
+const MENU = document.querySelector("select");
+
+MENU_NAVBAR.addEventListener("click", () => {
+  MENU.style.display = "block";
+});
