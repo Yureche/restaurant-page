@@ -21,13 +21,14 @@ body {
   padding: 0;
   background-color: #f0e9d2;
 }
-
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: 0 15px;
+  position: sticky;
+  z-index: 100;
 }
 
 .logo {
@@ -70,8 +71,46 @@ header {
   .navbar {
     font-size: 17.5px;
   }
+  .menu {
+    flex-wrap: wrap;
+  }
 }
 
 #content {
-  border: 1px solid black;
+  /* background-color: #fff; */
+  width: 100%;
+  margin: 0;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 7rem;
+}
+
+select {
+  padding: 8px 12px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"> <polygon points="0,0 100,0 50, 50" style="fill:%23666"/></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+  font-family: "Helvetica Neue", "Helvetica";
+  font-size: 15px;
+  display: none;
+}
+
+select:focus,
+select:hover {
+  outline: none;
+  border: 1px solid #bbb;
 }
