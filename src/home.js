@@ -1,0 +1,13 @@
+import Img from "./assets/img.jpeg";
+const CONTENT = document.getElementById("content");
+const HOME = document.createElement("div");
+HOME.classList.add("home");
+CONTENT.appendChild(HOME);
+const myImage = new Image(250, 250);
+myImage.classList.add("home_image");
+myImage.src = Img;
+HOME.appendChild(myImage);
+const DESCRIPTION = document.createElement("p");
+DESCRIPTION.textContent = "Welcome to my restaurant!";
+DESCRIPTION.classList.add("home_description");
+HOME.appendChild(DESCRIPTION);
