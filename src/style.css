@@ -114,3 +114,23 @@ select:hover {
   outline: none;
   border: 1px solid #bbb;
 }
+
+.home {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home_image {
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.home_description {
+  font-size: 25px;
+  font-family: "Helvetica Neue", "Helvetica";
+}
