@@ -9,14 +9,11 @@ HEADER.appendChild(LOGO);
 const NAVBAR = document.createElement("div");
 NAVBAR.classList.add("navbar");
 HEADER.appendChild(NAVBAR);
-const MENU = document.createElement("p"),
-  ORDER = document.createElement("p"),
-  ABOUT = document.createElement("p");
+const HOME = document.createElement("p"),
+  MENU = document.createElement("p");
 
+HOME.textContent = "Home";
+HOME.classList.add("navbar_item", "navbar_home");
 MENU.textContent = "Menu";
 MENU.classList.add("navbar_item", "navbar_menu");
-ORDER.textContent = "Order";
-ORDER.classList.add("navbar_item", "navbar_order");
-ABOUT.textContent = "About";
-ABOUT.classList.add("navbar_item", "navbar_about");
-NAVBAR.append(MENU, ORDER, ABOUT);
+NAVBAR.append(HOME, MENU);
